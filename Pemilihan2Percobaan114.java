@@ -18,7 +18,11 @@ public class Pemilihan2Percobaan114 {
             if ((tahun % 100) != 0) {
                 System.out.println("Tahun kabisat");
             } else {
-                System.out.println("Bukan tahun kabisat");
+                if ((tahun % 400) == 0) {
+                    System.out.println("Tahun kabisat");
+                } else {
+                    System.out.println("Bukan tahun kabisat");
+                }
             }
         } else {
             System.out.println("Bukan tahun kabisat");
